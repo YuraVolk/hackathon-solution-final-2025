@@ -1,0 +1,18 @@
+version: "3.8"
+
+services:
+  main-service:
+    build:
+      context: .
+      dockerfile: ./main/Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - DATABASE_URL=postgres://postgres:159357@db:5432/hakaton_db
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
+    external: true

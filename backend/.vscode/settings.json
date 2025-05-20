@@ -1,0 +1,8 @@
+{
+    "dotnetAcquisitionExtension.enableTelemetry": false,
+    "composer.diagnosticsEnabled": false,
+    "svelte.plugin.css.diagnostics.enable": true,
+    "svelte.plugin.svelte.diagnostics.enable": true,
+    "mdb.sendTelemetry": false,
+    "rest-client.enableTelemetry": false
+}
